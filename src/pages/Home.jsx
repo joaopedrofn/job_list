@@ -17,13 +17,7 @@ const Home = () => {
   };
 
   return (
-    <div className="h-screen p-4 flex flex-col gap-2 bg-slate-200">
-      <img
-        src="/images/logo.svg"
-        alt="Jobylon"
-        width="30%"
-        className="mx-auto"
-      />
+   <>
       <div className="relative overflow-hidden h-full flex gap-2">
         <div className="h-full flex-1 overflow-auto flex flex-col gap-2">
           {data &&
@@ -34,7 +28,7 @@ const Home = () => {
         <JobDetails onClose={handleClose} job={job} />
       </div>
       {isLoading && <Loading />}
-    </div>
+    </>
   );
 };
 
