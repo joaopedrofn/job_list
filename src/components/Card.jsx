@@ -1,6 +1,7 @@
 const Card = ({ children, onClick }) => {
   return (
     <div
+      data-testid='card'
       onClick={onClick}
       className={`
         rounded-md
